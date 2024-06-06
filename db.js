@@ -19,7 +19,7 @@ connection.connect((err) => {
         CREATE TABLE IF NOT EXISTS user (
             uid INT AUTO_INCREMENT,
             name VARCHAR(255) NOT NULL,
-            email VARCHAR(255) NOT NULL,
+            email VARCHAR(255) NOT NULL UNIQUE,
             PRIMARY KEY (uid)
         );
     `;
